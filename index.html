@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAO CALCULATOR</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="o-container-calculator">
+        <div class="o-firts-column">
+            <div class="o-text">
+                <span>UAO</span>
+                <h1>CALCULATOR</h1>                
+            </div>
+            <div class="o-number">
+                <h2>Numero 1</h2>
+                <input type="text" id="num1"  >
+            </div>
+            <div class="o-number">
+                <h2>Numero 2</h2>
+                <input type="text" id="num2">
+            </div>
+            <div class="o-operation">
+                <h2>Operación</h2>
+                <select name="operation" id="operation">
+                    <option value="suma">Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicacion">Multiplicación</option>
+                    <option value="division">División</option>
+                </select>
+            </div>
+        </div>
+        <div class="o-second-column">
+            <div class="o-btn-equal">
+                <input type="button" value="=" onclick="operations();">
+            </div>
+        </div>
+        <div class="o-third-column">
+            <div class="o-result">
+                <h2>Resultado</h2>
+                <label for="" id="result"></label>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
