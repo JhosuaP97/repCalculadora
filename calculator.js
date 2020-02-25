@@ -1,26 +1,30 @@
+
+let nuNum1 = 0;
+let nuNum2 = 0;
+let stSelect="suma";
 function operations() {
-  let nuNum1 = parseInt(document.getElementById("num1").value);
-  let nuNum2 = parseInt(document.getElementById("num2").value);
-  let stSelect = document.getElementById("operation").value;
-  let calc;
+  nuNum1 = parseInt(document.getElementById("num1").value);
+  nuNum2 = parseInt(document.getElementById("num2").value);
+  stSelect = document.getElementById("operation").value;
+  let nuCalc=0;
   let nuResult = document.getElementById("result");
 
   switch (stSelect) {
     case "suma":
-      calc = nuNum1 + nuNum2;
-      nuResult.innerHTML = calc;
+      nuCalc = nuNum1 + nuNum2;
+      nuResult.innerHTML = nuCalc;
       break;
     case "resta":
-      calc = nuNum1 - nuNum2;
-      nuResult.innerHTML = calc;
+      nuCalc = nuNum1 - nuNum2;
+      nuResult.innerHTML = nuCalc;
       break;
     case "multiplicacion":
-      calc = nuNum1 * nuNum2;
-      nuResult.innerHTML = calc;
+      nuCalc = nuNum1 * nuNum2;
+      nuResult.innerHTML = nuCalc;
       break;
     case "division":
-      calc = nuNum1 / nuNum2;
-      nuResult.innerHTML = calc;
+      nuCalc = nuNum1 / nuNum2;
+      nuResult.innerHTML = nuCalc;
       break;
     default:
       break;

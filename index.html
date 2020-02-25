@@ -16,15 +16,15 @@
             </div>
             <div class="o-number">
                 <h2>Numero 1</h2>
-                <input type="text" id="num1" onkeypress="return onlyNumbers(event)" >
+                <input type="text" id="num1" onchange="operations();" >
             </div>
             <div class="o-number">
                 <h2>Numero 2</h2>
-                <input type="text" id="num2"  onkeypress="return onlyNumbers(event)">
+                <input type="text" id="num2"  onchange="operations();">
             </div>
             <div class="o-operation">
                 <h2>Operación</h2>
-                <select name="operation" id="operation">
+                <select onchange="operations();" name="operation" id="operation">
                     <option value="suma">Suma</option>
                     <option value="resta">Resta</option>
                     <option value="multiplicacion">Multiplicación</option>
@@ -34,7 +34,7 @@
         </div>
         <div class="o-second-column">
             <div class="o-btn-equal">
-                <input type="button" value="=" onclick="operations();">
+                <input type="button" value="=">
             </div>
         </div>
         <div class="o-third-column">
@@ -46,6 +46,6 @@
 
         
     </div>
-    <script src="calculadora.js"></script>
+    <script src="calculator.js"></script>
 </body>
 </html>
